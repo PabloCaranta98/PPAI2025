@@ -15,7 +15,7 @@ namespace PPAI2025.Entidades
         private DateTime fechaHoraCierre;
         private DateTime fechaHoraFinalizacion;
 
-        // Atributos referencia
+        // Atributos de referencia
         private Estado Estado;
         private Empleado Empleado;
         private EstacionSismologica EstacionSismologica;
