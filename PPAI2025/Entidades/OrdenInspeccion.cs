@@ -31,7 +31,7 @@ namespace PPAI2025.Entidades
             fechaHoraFinalizacion = fechaHFinaliz;
         }
 
-        public int NroOrden { get { return nroOrden;} set { nroOrden = value} }
+        public int NroOrden { get { return nroOrden;} set { nroOrden = value; } }
         public string ObservacionCierre { get { return observacionCierre; } set { observacionCierre = value; } }
         public DateTime FechaHoraInicio { get { return fechaHoraInicio; } set { fechaHoraInicio = value; } } 
         public DateTime FechaHoraCierre { get { return fechaHoraCierre; } set { fechaHoraInicio = value; } }
