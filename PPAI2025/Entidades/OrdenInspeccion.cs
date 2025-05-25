@@ -16,10 +16,9 @@ namespace PPAI2025.Entidades
         private DateTime fechaHoraFinalizacion;
 
         // Atributos de referencia
-        private Estado Estado;
-        private Empleado Empleado;
-        private EstacionSismologica EstacionSismologica;
-
+        private Estado estado; // Renombrado para evitar conflicto con la propiedad
+        private Empleado empleado;
+        private EstacionSismologica estacionSismologica;
 
         // Constructor
         public OrdenInspeccion(int nroOrd, string obsCierre, DateTime fechaHIni, DateTime fechaHCierre, DateTime fechaHFinaliz)
@@ -31,16 +30,30 @@ namespace PPAI2025.Entidades
             fechaHoraFinalizacion = fechaHFinaliz;
         }
 
-        public int NroOrden { get { return nroOrden;} set { nroOrden = value; } }
+        public int NroOrden { get { return nroOrden; } set { nroOrden = value; } }
         public string ObservacionCierre { get { return observacionCierre; } set { observacionCierre = value; } }
-        public DateTime FechaHoraInicio { get { return fechaHoraInicio; } set { fechaHoraInicio = value; } } 
-        public DateTime FechaHoraCierre { get { return fechaHoraCierre; } set { fechaHoraInicio = value; } }
-        public DateTime FechaHoraFinalizacion { get { return fechaHoraFinalizacion; } set {fechaHoraFinalizacion = value; } }
-        public Estado Estado { get { return Estado; } set { Estado = value; } }
-        public Empleado Empleado { get { return Empleado; } set { Empleado = value; } }
-        public EstacionSismologica EstacionSismologica { get { return   EstacionSismologica; } set { EstacionSismologica = value; } }
+        public DateTime FechaHoraInicio { get { return fechaHoraInicio; } set { fechaHoraInicio = value; } }
+        public DateTime FechaHoraCierre { get { return fechaHoraCierre; } set { fechaHoraCierre = value; } }
+        public DateTime FechaHoraFinalizacion { get { return fechaHoraFinalizacion; } set { fechaHoraFinalizacion = value; } }
 
+        // Propiedades públicas
+        public Estado Estado
+        {
+            get { return estado; }
+            set { estado = value; }
+        }
 
+        public Empleado Empleado
+        {
+            get { return empleado; }
+            set { empleado = value; }
+        }
+
+        public EstacionSismologica EstacionSismologica
+        {
+            get { return estacionSismologica; }
+            set { estacionSismologica = value; }
+        }
     }
 
 }
